@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx", //react-jsx value allows not import React in every JSX file
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, //if module does not have default import we can use default import instead of * as Name
+    "esModuleInterop": true, //allows use basic "import" if module use common js imports
+    "baseUrl": ".", //to use webpack aliases
+    "paths": {
+      "@/*": ["./src/*"] //to use webpack aliases
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS" //to resolve issue with ts-node if webpack config has ts extension
+    }
+  }
+}
