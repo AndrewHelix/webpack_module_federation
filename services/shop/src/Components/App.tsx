@@ -8,11 +8,7 @@ import HatIcon from '@/assets/hat-chef-svgrepo-com.svg';
 const App = () => {
   return (
     <>
-      <h1 data-testid={'App'}>hello world!</h1>
-      <br />
-      <Link to={'/about'}>To About</Link>
-      <br />
-      <Link to={'/shop'}>To Shop</Link>
+      <h1 data-testid={'App'}>SHOP MODULE!</h1>
       <Outlet />
     </>
   );

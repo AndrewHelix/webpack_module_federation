@@ -1,18 +1,13 @@
 import { useState } from 'react';
 import * as classes from './App.module.scss';
 import { Link, Outlet } from 'react-router-dom';
-import Twitter from '@/assets/twitter.png';
-import Flowers from '@/assets/flowers.jpg';
-import HatIcon from '@/assets/hat-chef-svgrepo-com.svg';
+import { deepMerge } from '@packages/shared/src/utils/deepMerge';
 
 const App = () => {
+  deepMerge();
   return (
     <>
-      <h1 data-testid={'App'}>hello world!</h1>
-      <br />
-      <Link to={'/about'}>To About</Link>
-      <br />
-      <Link to={'/shop'}>To Shop</Link>
+      <h1 data-testid={'App'}>ADMIN MODULE!</h1>
       <Outlet />
     </>
   );

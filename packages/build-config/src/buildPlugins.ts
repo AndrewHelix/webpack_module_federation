@@ -19,6 +19,7 @@ export const buildPlugins = (
     new HtmlWebpackPlugin({
       template: options.paths.html, //entry point of html file
       favicon: path.resolve(options.paths.public, 'favicon.svg'),
+      publicPath: '/',
     }),
     new DefinePlugin({
       __PLATFORM: JSON.stringify(options.platform),
